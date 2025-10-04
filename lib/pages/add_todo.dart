@@ -33,8 +33,13 @@ class AddTodo extends StatelessWidget {
                 context.read<SaveTask>().addTask(
                   Task(
                     title: controller.text,
+                    isCompleted: false,
+
                   ),
                 );
+                controller.clear();
+                // after adding the task close the screen
+                Navigator.of(context).pop();
               },
               child: const Text('Add'),
             ),
