@@ -1,24 +1,20 @@
-# 📝 Todo App (Flutter)
+#  Todo App (Flutter)
 
 A simple and modern **Todo App** built with **Flutter**.  
 This app allows users to add, delete, and manage their daily tasks with an intuitive UI.  
 
 ---
 
-## 🚀 Features
-- ➕ Add new tasks  
-- ✅ Mark tasks as completed  
-- 🗑️ Delete tasks  
-- 🎨 Clean & responsive UI (works on Android, iOS, Web, and Desktop)    
+##  Features
+-  Add new tasks  
+-  Mark tasks as completed  
+-  Delete tasks  
+-  Clean & responsive UI (works on Android, iOS, Web, and Desktop)    
 
 ---
 
-## 📸 Screenshots
-(Add your app screenshots here)
 
----
-
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Install [Flutter](https://flutter.dev/docs/get-started/install)  
