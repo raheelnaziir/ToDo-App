@@ -6,7 +6,6 @@ class SaveTask extends ChangeNotifier{
     List<Task> _tasks = [
       Task(title: 'Learn flutter', isCompleted: false),
       Task(title: 'Learn python', isCompleted: false),
-      Task(title: 'Learn sex', isCompleted: false),
     ];
 
     List<Task> get tasks => _tasks;
@@ -18,5 +17,6 @@ class SaveTask extends ChangeNotifier{
 
     void checkTask(int index) {
         tasks[index].isDone();
+        notifyListeners();
     }
 }

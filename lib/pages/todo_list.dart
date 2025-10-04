@@ -26,11 +26,20 @@ class TodoList extends StatelessWidget {
           itemBuilder: (BuildContext context, index) {
 
           return ListTile(
-            title: Text(task.tasks[index].title),
+            title: Text(task.tasks[index].title ,
+                style: TextStyle(
+                    decoration: task.tasks[index].isCompleted
+                        ? TextDecoration.lineThrough
+                        : TextDecoration.none,
+                )
+            ),
+
             trailing: Wrap(
               children: [
                 Checkbox (value: task.tasks[index].isCompleted,
-                onChanged: (p) {},
+                onChanged: (_) {
+                  context.read<SaveTask>().checkTask(index);
+                },
 
                 )
               ]
