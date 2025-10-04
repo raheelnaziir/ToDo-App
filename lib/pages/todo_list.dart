@@ -12,6 +12,8 @@ class TodoList extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Todo List'),
+        centerTitle: true,
+
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
@@ -41,7 +43,12 @@ class TodoList extends StatelessWidget {
                   context.read<SaveTask>().checkTask(index);
                 },
 
-                )
+                ),
+                IconButton(
+                  onPressed: () {
+                    context.read<SaveTask>().removeTask(task.tasks[index]);
+                  },
+                  icon: const Icon( Icons.delete),),
               ]
             ),
           );
